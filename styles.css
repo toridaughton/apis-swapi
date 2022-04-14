@@ -1,8 +1,8 @@
-.residents {
-    display: flexbox;
+.button-container {
+    display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
     width: 50vw;
     height: 25vh;
     border-radius: 5%;
@@ -12,12 +12,14 @@
 
 #residents-btn {
     background-color: rgb(141, 46, 141);
-    position: absolute;
-    height: 50px;
-    right: 150px;
-    top: 60px;
+    /* position: absolute; */
+    height: 100px;
+    width: 200px;
+    /* right: 150px; */
+    /* top: 60px; */
     border-radius: 45%;
-    color: whitesmoke
+    color: whitesmoke;
+    font-size: larger;
 }
 
 #residents-btn:hover {
@@ -25,6 +27,10 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(13, 19, 35);
 }
 
