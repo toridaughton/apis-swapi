@@ -9,14 +9,16 @@ const clickBtn = event => {
         let residents = res.data.results[0].residents
         for(let i = 0; i < residents.length; i++){
             axios.get(residents[i])
-            .then(()=> {
-                let residentsHeading = document.createElement(`h2`)
-                residentsHeading.textContent = residents[i].content_url
-                body.appendChild(residentsHeading)
+            .then((resTwo)=> {
+                let body = document.querySelector('body')
+                let residentsNames = document.createElement(`h2`)
+                residentsNames.textContent = resTwo.data.name
+                body.appendChild(residentsNames)
             })
         }
     })
     console.log(`button clicked`)
 }
 
-residentsBtn.addEventListener(`click`, clickBtn())
+residentsBtn.addEventListener(`click`, clickBtn)
+
