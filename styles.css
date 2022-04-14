@@ -1,0 +1,33 @@
+.residents {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 50vw;
+    height: 25vh;
+    border-radius: 5%;
+    background-color: rgb(110, 124, 158);
+}
+
+
+#residents-btn {
+    background-color: rgb(141, 46, 141);
+    position: absolute;
+    height: 50px;
+    right: 150px;
+    top: 60px;
+    border-radius: 45%;
+    color: whitesmoke
+}
+
+#residents-btn:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(13, 19, 35);
+}
+
+h2 {
+    color: gold
+}
